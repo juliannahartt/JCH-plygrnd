@@ -30,12 +30,13 @@ FIELD_LABELS = {
     "tag_type":      "Tag Type",
     "mfg_date":      "Mfg Date",
     "exp_date":      "Expiration Date",
-    "flavor_number": "Flavor Number",
+    "flavor_number": "Flavor #",
+    "flavor_name":   "Flavor Name",
     "copacker_id":   "Copacker ID",
     "validity":      "Validity",
 }
 
-FIELD_ORDER = ["uid_fmt", "tag_type", "mfg_date", "exp_date", "flavor_number", "copacker_id", "validity"]
+FIELD_ORDER = ["uid_fmt", "tag_type", "mfg_date", "exp_date", "flavor_number", "flavor_name", "copacker_id", "validity"]
 
 
 class TagReadApp(tk.Tk):
@@ -224,6 +225,8 @@ class TagReadApp(tk.Tk):
                 val = tag_dict.get("uid_fmt") or "—"
             elif key == "tag_type":
                 val = tag_dict.get("tag_type") or "—"
+            elif key == "flavor_name":
+                val = pt.flavor_name or "—"
             else:
                 val = getattr(pt, key, None) or "—"
 

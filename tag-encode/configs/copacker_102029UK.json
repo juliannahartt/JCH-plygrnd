@@ -1,0 +1,64 @@
+{
+  "copacker_id": "102029UK",
+  "copacker_name": "Simpsons Beverages",
+  "short_name": "SB",
+  "location": "UK",
+  "flavors": [
+    {
+      "flavor_number": 506,
+      "flavor_name": "Electrolytes",
+      "gtin": "00850010449357",
+      "vendor_item": "5061016154168",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 507,
+      "flavor_name": "Vitamin Boost",
+      "gtin": "00850010449364",
+      "vendor_item": "5061016154151",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 508,
+      "flavor_name": "Blackcurrant",
+      "gtin": "00850010449371",
+      "vendor_item": "5061016154267",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 509,
+      "flavor_name": "Cucumber",
+      "gtin": "00850010449388",
+      "vendor_item": "5061016154274",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 510,
+      "flavor_name": "Lemon Lime",
+      "gtin": "00850010449395",
+      "vendor_item": "5061016154281",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 511,
+      "flavor_name": "Orange Mango",
+      "gtin": "00850010449401",
+      "vendor_item": "5061016154298",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 512,
+      "flavor_name": "Strawberry Mint",
+      "gtin": "00850010449418",
+      "vendor_item": "5061016154311",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 513,
+      "flavor_name": "Pear",
+      "gtin": "00850010449425",
+      "vendor_item": "5061016154304",
+      "status": "In Production"
+    }
+  ]
+}

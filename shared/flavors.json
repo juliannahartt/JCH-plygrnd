@@ -1,0 +1,157 @@
+{
+  "115": {
+    "flavor_name": "Electrolytes",
+    "gtin": "00850010449128",
+    "status": "In Production"
+  },
+  "116": {
+    "flavor_name": "Vitamin Boost",
+    "gtin": "00850010449135",
+    "status": "In Production"
+  },
+  "123": {
+    "flavor_name": "Black Cherry",
+    "gtin": "00850010449517",
+    "status": "In Production"
+  },
+  "124": {
+    "flavor_name": "Blackberry Lime",
+    "gtin": "00850010449463",
+    "status": "In Production"
+  },
+  "125": {
+    "flavor_name": "Blood Orange",
+    "gtin": "00850010449548",
+    "status": "In Production"
+  },
+  "126": {
+    "flavor_name": "Energy Boost",
+    "gtin": "00850010449524",
+    "status": "In Production"
+  },
+  "127": {
+    "flavor_name": "Coconut",
+    "gtin": "00850010449487",
+    "status": "In Production"
+  },
+  "128": {
+    "flavor_name": "Cucumber",
+    "gtin": "00850010449456",
+    "status": "In Production"
+  },
+  "129": {
+    "flavor_name": "Grapefruit",
+    "gtin": "00850010449562",
+    "status": "In Production"
+  },
+  "130": {
+    "flavor_name": "Lime",
+    "gtin": "00850010449500",
+    "status": "In Production"
+  },
+  "131": {
+    "flavor_name": "Lemon",
+    "gtin": "00850010449579",
+    "status": "In Production"
+  },
+  "132": {
+    "flavor_name": "Lime Mint",
+    "gtin": "00850010449449",
+    "status": "In Production"
+  },
+  "133": {
+    "flavor_name": "Peach Mango",
+    "gtin": "00850010449432",
+    "status": "In Production"
+  },
+  "134": {
+    "flavor_name": "Pomegranate Blueberry",
+    "gtin": "00850010449531",
+    "status": "In Production"
+  },
+  "135": {
+    "flavor_name": "Raspberry",
+    "gtin": "00850010449555",
+    "status": "In Production"
+  },
+  "136": {
+    "flavor_name": "Strawberry Lemongrass",
+    "gtin": "00850010449470",
+    "status": "In Production"
+  },
+  "137": {
+    "flavor_name": "Watermelon",
+    "gtin": "00850010449494",
+    "status": "In Production"
+  },
+  "140": {
+    "flavor_name": "Focus Blend",
+    "gtin": "00850010449586",
+    "status": "In Production"
+  },
+  "143": {
+    "flavor_name": "Root Beer",
+    "gtin": "00850010449685",
+    "status": "In Production"
+  },
+  "144": {
+    "flavor_name": "Orange Cream",
+    "gtin": "00850010449692",
+    "status": "In Production"
+  },
+  "145": {
+    "flavor_name": "Lemon Lime",
+    "gtin": "00850010449708",
+    "status": "In Production"
+  },
+  "146": {
+    "flavor_name": "Blueberry Fizz",
+    "gtin": "00850010449715",
+    "status": "In Production"
+  },
+  "147": {
+    "flavor_name": "Prebiotics",
+    "gtin": "00850010449722",
+    "status": "In Design"
+  },
+  "506": {
+    "flavor_name": "Electrolytes",
+    "gtin": "00850010449357",
+    "status": "In Production"
+  },
+  "507": {
+    "flavor_name": "Vitamin Boost",
+    "gtin": "00850010449364",
+    "status": "In Production"
+  },
+  "508": {
+    "flavor_name": "Blackcurrant",
+    "gtin": "00850010449371",
+    "status": "In Production"
+  },
+  "509": {
+    "flavor_name": "Cucumber",
+    "gtin": "00850010449388",
+    "status": "In Production"
+  },
+  "510": {
+    "flavor_name": "Lemon Lime",
+    "gtin": "00850010449395",
+    "status": "In Production"
+  },
+  "511": {
+    "flavor_name": "Orange Mango",
+    "gtin": "00850010449401",
+    "status": "In Production"
+  },
+  "512": {
+    "flavor_name": "Strawberry Mint",
+    "gtin": "00850010449418",
+    "status": "In Production"
+  },
+  "513": {
+    "flavor_name": "Pear",
+    "gtin": "00850010449425",
+    "status": "In Production"
+  }
+}

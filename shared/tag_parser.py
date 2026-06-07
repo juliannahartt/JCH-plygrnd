@@ -4,11 +4,31 @@ Tries NDEF → delimited text → raw hex fallback.
 
 Expected BIB label fields:
   uid, mfg_date, exp_date, flavor_number, copacker_id, validity
+
+Flavor name is resolved from shared/flavors.json when available.
 """
 
 import json
+import os
 import re
 import struct
+
+# Load master flavor lookup once at import time
+_FLAVORS: dict = {}
+_FLAVORS_PATH = os.path.join(os.path.dirname(__file__), "flavors.json")
+try:
+    with open(_FLAVORS_PATH) as _f:
+        _FLAVORS = {int(k): v for k, v in json.load(_f).items()}
+except Exception:
+    pass
+
+
+def lookup_flavor_name(flavor_number) -> str | None:
+    """Return flavor name for a numeric flavor number, or None if unknown."""
+    try:
+        return _FLAVORS.get(int(flavor_number), {}).get("flavor_name")
+    except (TypeError, ValueError):
+        return None
 
 
 FIELD_ALIASES = {
@@ -24,7 +44,8 @@ FIELD_ALIASES = {
 class ParsedTag:
     __slots__ = [
         "uid", "uid_fmt", "tag_type",
-        "mfg_date", "exp_date", "flavor_number", "copacker_id", "validity",
+        "mfg_date", "exp_date", "flavor_number", "flavor_name",
+        "copacker_id", "validity",
         "raw_text", "ndef_records", "parse_method", "raw_hex",
         "unknown_fields",
     ]
@@ -68,6 +89,10 @@ def parse(tag_dict):
                 _extract_fields(pt, text)
         except Exception:
             pt.parse_method = "RAW_HEX"
+
+    # Resolve flavor name from master lookup
+    if pt.flavor_number is not None:
+        pt.flavor_name = lookup_flavor_name(pt.flavor_number)
 
     return pt
 

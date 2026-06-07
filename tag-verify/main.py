@@ -24,13 +24,14 @@ WHITE     = "#FFFFFF"
 GRAY      = "#636E72"
 SUBTEXT   = "#B2BEC3"
 
-VERIFY_FIELDS = ["mfg_date", "exp_date", "flavor_number", "copacker_id", "validity"]
+VERIFY_FIELDS = ["mfg_date", "exp_date", "flavor_number", "flavor_name", "copacker_id", "validity"]
 FIELD_LABELS  = {
     "uid_fmt":       "Tag UID",
     "tag_type":      "Tag Type",
     "mfg_date":      "Mfg Date",
     "exp_date":      "Expiration",
     "flavor_number": "Flavor #",
+    "flavor_name":   "Flavor Name",
     "copacker_id":   "Copacker",
     "validity":      "Valid",
 }
@@ -109,7 +110,7 @@ class TagVerifyApp(tk.Tk):
         lbl_font = tkfont.Font(family="Segoe UI", size=13)
         val_font = tkfont.Font(family="Consolas", size=15, weight="bold")
 
-        for i, key in enumerate(["mfg_date", "exp_date", "flavor_number", "copacker_id", "validity"]):
+        for i, key in enumerate(["mfg_date", "exp_date", "flavor_number", "flavor_name", "copacker_id", "validity"]):
             label = FIELD_LABELS[key]
             row = tk.Frame(self._field_frame, bg=BG_IDLE)
             row.grid(row=i // 2, column=i % 2, padx=40, pady=6, sticky="w")

@@ -1,0 +1,155 @@
+{
+  "copacker_id": "102089TX",
+  "copacker_name": "Sunny Sky Products",
+  "short_name": "SSP",
+  "location": "TX",
+  "flavors": [
+    {
+      "flavor_number": 115,
+      "flavor_name": "Electrolytes",
+      "gtin": "00850010449128",
+      "vendor_item": "L0767F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 116,
+      "flavor_name": "Vitamin Boost",
+      "gtin": "00850010449135",
+      "vendor_item": "L0761F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 123,
+      "flavor_name": "Black Cherry",
+      "gtin": "00850010449517",
+      "vendor_item": "L0760F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 124,
+      "flavor_name": "Blackberry Lime",
+      "gtin": "00850010449463",
+      "vendor_item": "L0773F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 125,
+      "flavor_name": "Blood Orange",
+      "gtin": "00850010449548",
+      "vendor_item": "L0759F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 126,
+      "flavor_name": "Energy Boost",
+      "gtin": "00850010449524",
+      "vendor_item": "L0771F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 127,
+      "flavor_name": "Coconut",
+      "gtin": "00850010449487",
+      "vendor_item": "L0774F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 128,
+      "flavor_name": "Cucumber",
+      "gtin": "00850010449456",
+      "vendor_item": "L0770F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 129,
+      "flavor_name": "Grapefruit",
+      "gtin": "00850010449562",
+      "vendor_item": "L0775F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 130,
+      "flavor_name": "Lime",
+      "gtin": "00850010449500",
+      "vendor_item": "L0769F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 131,
+      "flavor_name": "Lemon",
+      "gtin": "00850010449579",
+      "vendor_item": "L0764F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 132,
+      "flavor_name": "Lime Mint",
+      "gtin": "00850010449449",
+      "vendor_item": "L0772F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 133,
+      "flavor_name": "Peach Mango",
+      "gtin": "00850010449432",
+      "vendor_item": "L0757F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 134,
+      "flavor_name": "Pomegranate Blueberry",
+      "gtin": "00850010449531",
+      "vendor_item": "L0758F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 135,
+      "flavor_name": "Raspberry",
+      "gtin": "00850010449555",
+      "vendor_item": "L0762F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 136,
+      "flavor_name": "Strawberry Lemongrass",
+      "gtin": "00850010449470",
+      "vendor_item": "L0765F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 137,
+      "flavor_name": "Watermelon",
+      "gtin": "00850010449494",
+      "vendor_item": "L0763F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 143,
+      "flavor_name": "Root Beer",
+      "gtin": "00850010449685",
+      "vendor_item": "L0860F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 144,
+      "flavor_name": "Orange Cream",
+      "gtin": "00850010449692",
+      "vendor_item": "L0859F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 145,
+      "flavor_name": "Lemon Lime",
+      "gtin": "00850010449708",
+      "vendor_item": "L0858F014901",
+      "status": "In Production"
+    },
+    {
+      "flavor_number": 146,
+      "flavor_name": "Blueberry Fizz",
+      "gtin": "00850010449715",
+      "vendor_item": "L0857F014901",
+      "status": "In Production"
+    }
+  ]
+}
