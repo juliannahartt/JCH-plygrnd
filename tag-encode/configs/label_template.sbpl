@@ -1,0 +1,26 @@
+# SBPL label template for BIB NFC labels — SATO CL4NX Plus 203dpi
+#
+# HOW TO UPDATE THIS FILE:
+#   1. Capture a real SBPL job from TagPrinter 2.3 (print-to-file or debug log)
+#   2. Paste the full SBPL here, replacing hard-coded field values with
+#      the {variable} placeholders below.
+#   3. Lines starting with # are stripped by sbpl_builder.py before sending.
+#
+# Available variables:
+#   {rk_command}     — full <RK> NFC write command (computed, do not hardcode)
+#   {flavor_number}  — e.g. 145
+#   {flavor_name}    — e.g. Lemon Lime
+#   {gtin}           — e.g. 00850010449708
+#   {mfg_date}       — YYYY-MM-DD
+#   {exp_date}       — YYYY-MM-DD
+#   {copacker_id}    — e.g. 102089TX
+#   {nfc_data}       — full pipe-delimited NFC payload string
+#   {quantity}       — print quantity (integer)
+#
+# CURRENT STATUS: NFC-encode-only placeholder.
+# Visual label commands (fonts, barcode, logo) will be added once a
+# captured TagPrinter 2.3 SBPL job is provided.
+<A>
+{rk_command}
+<Q>{quantity}
+<Z>
