@@ -6,15 +6,26 @@ Hardware
 --------
 - Printer    : SATO CL4NX Plus 203dpi (RFID/NFC module installed)
 - NFC tags   : NTAG213 / NTAG215 / NTAG216 inlays (ISO/IEC 14443 TypeA)
-- Connection : USB cable → Windows print spooler (win32print, RAW datatype)
+- Connection : Direct USB via libusb (NOT Windows print spooler)
+                 USB VendorID  = 0x0828  (SATO)
+                 USB ProductID = 0x0158  (CL4NX Plus)
 - Verify reader: ACR122U or ACR1252U USB (same as tag-read)
 
-Python dependency: pywin32  (pip install pywin32)
+Python dependency: pyusb  (pip install pyusb)
+  Also requires libusb-1.0 on Windows — install via Zadig or libusb-win32.
+  NOTE: Only one process can claim the USB interface at a time.
+        The existing TagPrinter 2.3 app must be closed before running tag-encode.
 
 Printer communication
 ---------------------
-Raw SBPL sent via win32print.WritePrinter() with RAW spool datatype.
-Printer appears as a standard Windows device after SATO driver install.
+Raw SBPL sent directly over USB using pyusb:
+  dev = usb.core.find(idVendor=0x0828, idProduct=0x0158)
+  dev.claim_interface(...)
+  dev.write(ep_out, sbpl_bytes)
+  dev.release_interface(...)
+
+The existing TagPrinter 2.3 (Java/JavaFX) uses the same claim/release pattern.
+Typical print job takes ~15 seconds end-to-end (includes NFC encode time).
 
 SBPL command structure (ISO/IEC 14443 TypeA write)
 ----------------------------------------------------
@@ -85,8 +96,26 @@ Master flavor lookup: shared/flavors.json
   Maps flavor_number → { flavor_name, gtin, status }
   Used by tag-read and tag-verify for display-only name resolution.
 
+Observations from existing TagPrinter 2.3 (Java/JavaFX)
+---------------------------------------------------------
+- App name    : TagPrinter 2.3
+- Language    : Java / JavaFX
+- Package     : co.bevi.tagprinter
+- Flavor source: Downloads from AWS S3 (177 total, filters to 32 for SSP)
+                 tag-encode will use local JSON configs instead
+- Copacker    : Determined at startup ("Initialized for Manufacturer Sunny Sky")
+- USB scan    : Enumerates all USB devices, selects by VID/PID
+- Job timing  : ~15 seconds per label (includes NFC encode + print)
+- Print flow  : Enumerate USB → Find SATO → Claim → Send SBPL → Release
+
+In Design flavors
+-----------------
+Should appear in copacker dropdowns IF vendor_item is filled for that copacker.
+Currently only Prebiotics (147) is In Design, and only has a TP vendor item.
+All configs already reflect this correctly.
+
 To do in next session
 ---------------------
 1. Provide one captured SBPL job string from existing app
-   (enable SATO print-to-file, or copy raw string from existing code)
+   (enable SATO print-to-file, or add debug logging to the Java source)
 2. Build tag-encode GUI + SBPL generator + USB send + encode-verify loop
